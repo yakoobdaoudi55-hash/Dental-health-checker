@@ -25,4 +25,4 @@ JavaScript (interactive logic and dynamic image display)
 **Usage:**
 
 1. Open `index.html` in a browser.
-2. Fill out the form and click **Check My Dental Risk**.
+2. Fill out the form and click (Check My Dental Risk)
