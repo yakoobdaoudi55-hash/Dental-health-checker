@@ -1,6 +1,3 @@
-تمام، إليك نسخة قصيرة ومركزة تصلح مباشرة لوضعها على GitHub:
-
----
 
 # Dental Health Checker 🦷
 
@@ -13,13 +10,19 @@ A simple interactive web app to quickly assess dental health risk. Users answer 
 * Visual feedback with images
 * Responsive design for desktop and mobile
 
-**Technologies:** HTML, CSS, JavaScript
+**How It Works**
+
+Users input their dental habits and health symptoms.
+The app calculates a risk score based on a simple scoring system.
+A result card displays the risk level, advice, score percentage, and an image reflecting the risk.
+
+**Technologies Used**
+
+HTML5
+CSS3 (responsive and modern design)
+JavaScript (interactive logic and dynamic image display)
 
 **Usage:**
 
 1. Open `index.html` in a browser.
 2. Fill out the form and click **Check My Dental Risk**.
-
----
-
-إذا أحببت، أستطيع أيضًا كتابة **نسخة جذابة جدًا بعبارات قصيرة جدًا وجاذبة للواجهة الرئيسية** بحيث تشد الزوار على GitHub. تريد أن أفعل ذلك؟
