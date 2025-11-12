@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="looking.css">
+<title>Simple Dental Risk Checker</title>
+</head>
+
+<body>
+
+<div class="translate-container">
+    <button id="translateBtn" data-i18n="switch_to_russian">Switch to Russian</button>
+</div>
+
+<div class="top-controls">
+    <button class="mode-btn" id="night-btn" data-i18n="night_mode">Night Mode</button>
+    <button class="mode-btn" id="day-btn" data-i18n="day_mode">Day Mode</button>
+</div>
+
+<h1 data-i18n="title">Dental Health Checker</h1>
+<p data-i18n="desc">Check your dental risk below.</p>
+
+<div class="input-group">
+    <label data-i18n="brush_label">Brush times per day</label>
+    <input type="number" id="brush" min="0" max="3" placeholder="2">
+</div>
+
+<div class="input-group">
+    <label data-i18n="sugar_label">Sugary foods</label>
+    <select id="sugar">
+        <option value="0" data-i18n="rarely">Rarely</option>
+        <option value="1" data-i18n="sometimes">Sometimes</option>
+        <option value="2" data-i18n="often">Often</option>
+    </select>
+</div>
+
+<div class="input-group">
+    <label data-i18n="pain_label">Tooth Pain</label>
+    <select id="pain">
+        <option value="0" data-i18n="no">No</option>
+        <option value="1" data-i18n="yes">Yes</option>
+    </select>
+</div>
+
+<div class="input-group">
+    <label data-i18n="bleeding_label">Gum Bleeding</label>
+    <select id="bleeding">
+        <option value="0" data-i18n="no">No</option>
+        <option value="1" data-i18n="yes">Yes</option>
+    </select>
+</div>
+
+<div class="input-group">
+    <label data-i18n="age_label">Your Age:</label>
+    <input type="number" id="age" min="0" placeholder="25">
+</div>
+
+<button onclick="calcRisk()" style="background:#00897b;color:white;width:200px;" data-i18n="check_risk">
+    Check Risk
+</button>
+
+<div class="result-card" id="result">
+    <b id="riskText"></b>
+    <p id="adviceText"></p>
+    <p id="scoreText"></p>
+    <img id="catImage" src="goodjob.jpg" alt="Result Image">
+</div>
+
+<div class="music-controls">
+    <button id="play-music" class="play-btn" data-i18n="play">Play</button>
+    <button id="stop-music" class="stop-btn" data-i18n="stop">Stop</button>
+</div>
+<audio id="bgm" src="HH.mp3" autoplay loop></audio>
+
+<div class="exit-container">
+    <button id="exit-btn" class="exit-btn" data-i18n="exit">Exit</button>
+</div>
+
+<script src="intractive.js"></script>
+</body>
+</html>
